@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'altercom2020'`, () => {
+  it(`should have as title 'Альтерком | 1С Франчайзи'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('altercom2020');
+    expect(app.title).toEqual('Альтерком | 1С Франчайзи');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('altercom2020 app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('Альтерком app is running!');
   });
 });

@@ -1,0 +1,9 @@
+.product-card {
+  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.mat-column-price {
+  max-width: 100px;
+}
