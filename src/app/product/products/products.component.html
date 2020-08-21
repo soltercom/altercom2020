@@ -1,0 +1,23 @@
+<mat-toolbar color="primary" class="toolbar-caption">
+  <mat-toolbar-row>
+    <span>Программы 1С</span>
+    <span class="flex-spacer"></span>
+    <div style="font-size: 14px; margin: 24px 0 0 0;">
+      <mat-form-field appearance="outline">
+        <mat-label>Поиск программы</mat-label>
+        <input matInput placeholder="Введите наименование" [formControl]="search">        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+    </div>
+    <span class="flex-spacer"></span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div fxLayout="row" fxLayoutGap="40px" fxLayoutAlign="center start" class="products-container">
+  <div fxLayout="column" fxLayoutGap="40px"
+    *ngFor="let column of products"
+  >
+    <span *ngFor="let prod of column">
+      <app-product-card *ngIf="prod" [product]="prod"></app-product-card>
+    </span>
+  </div>
+</div>
