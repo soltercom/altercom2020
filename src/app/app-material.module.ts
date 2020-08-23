@@ -7,9 +7,11 @@ import { MatTableModule } from '@angular/material/table';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDividerModule } from '@angular/material/divider';
 
 const modules = [MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatTableModule, FlexLayoutModule, MatFormFieldModule,
-  MatInputModule];
+  MatInputModule, MatGridListModule, MatDividerModule];
 
 @NgModule({
   imports: modules,

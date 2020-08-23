@@ -1,11 +1,12 @@
-<mat-toolbar color="primary" class="toolbar-caption">
+<mat-toolbar class="toolbar-caption">
   <mat-toolbar-row>
     <span>Программы 1С</span>
     <span class="flex-spacer"></span>
     <div style="font-size: 14px; margin: 24px 0 0 0;">
       <mat-form-field appearance="outline">
         <mat-label>Поиск программы</mat-label>
-        <input matInput placeholder="Введите наименование" [formControl]="search">        <mat-icon matSuffix>search</mat-icon>
+        <input matInput placeholder="Введите наименование" [formControl]="search" spellcheck="false">
+        <mat-icon matSuffix>search</mat-icon>
       </mat-form-field>
     </div>
     <span class="flex-spacer"></span>

@@ -1,7 +1,8 @@
-.toolbar-caption {
-  margin: 64px 0 0 0;
+.products-container {
+  margin: 10px 0 10px 0;
 }
 
-.products-container {
-  margin: 10px 0 0 0;
+mat-toolbar {
+  background-color: #01579b;
+  color: #fff;
 }

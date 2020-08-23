@@ -6,11 +6,15 @@
     <button routerLink="/product" mat-button class="nav-btn">
       <span class="mat-h4">Программы 1С</span>
     </button>
-    <button routerLink="/contact" mat-button class="nav-btn">
-      <span class="mat-h4">Контакты</span>
-    </button>
+    <a href="https://1c-connect.com/download-desktop/" target="_blank"
+      mat-raised-button color="accent"
+      fxHide.lt-md
+    >1C-Коннект</a>
     <span class="flex-spacer"></span>
     <img src="../assets/1c_logo3.png" alt="">
   </mat-toolbar>
-  <router-outlet></router-outlet>
+  <article class="app-main-part">
+    <router-outlet></router-outlet>
+  </article>
+  <app-footer></app-footer>
 </div>

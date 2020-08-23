@@ -1,14 +1,26 @@
 .app-container {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  min-height: 100%;
 }
 
 .app-toolbar {
   position: fixed;
   z-index: 200;
+  flex-shrink: 0;
+}
+
+.app-main-part {
+  flex-grow: 1;
+  margin: 60px 0 0 0;
+}
+
+@media (max-width: 600px) {
+  .app-main-part{
+    margin: 56px 0 0 0;
+  }
+}
+
+app-footer {
+  flex-shrink: 0;
 }

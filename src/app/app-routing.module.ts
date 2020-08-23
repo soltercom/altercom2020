@@ -10,12 +10,7 @@ const routes: Routes = [
     loadChildren:
       () => import('./product/product.module').then(m => m.ProductModule)
   },
-  {
-    path: 'contact',
-    loadChildren:
-      () => import('./contact/contact.module').then(m => m.ContactModule)
-  },
-  { path: '**', redirectTo: '', pathMatch: 'full' }
+  { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({
