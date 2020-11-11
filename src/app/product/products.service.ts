@@ -238,3 +238,9 @@ export class ProductsService {
     return ProductsService.split(products, columnNumber);
   }
 }
+
+/* this.formControl.valueChanges
+      .pipe(
+        startWith(''),
+        switchMap(term => this.filter(term)),
+      ); */

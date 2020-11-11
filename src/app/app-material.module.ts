@@ -9,9 +9,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatSelectModule } from '@angular/material/select';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 const modules = [MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatTableModule, FlexLayoutModule, MatFormFieldModule,
-  MatInputModule, MatGridListModule, MatDividerModule];
+                 MatInputModule, MatGridListModule, MatDividerModule, MatSelectModule, MatTooltipModule, MatSnackBarModule];
 
 @NgModule({
   imports: modules,
